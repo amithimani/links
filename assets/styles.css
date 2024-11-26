@@ -11,6 +11,11 @@ body {
     color: #fff;
     text-align: center;
     padding: 50px 20px;
+    height: 100vh;  /* Ensure full height */
+    overflow: hidden; /* Prevent any overflow at the bottom */
+    display: flex; /* Flexbox to center content vertically */
+    flex-direction: column;
+    justify-content: center;
     transition: all 0.3s ease;
 }
 
@@ -60,8 +65,8 @@ body {
 }
 
 .social-icon {
-    width: 40px;  /* Set to 40px */
-    height: 40px; /* Set to 40px */
+    width: 40px;
+    height: 40px;
     margin-right: 10px;
     transition: transform 0.2s ease;
 }
