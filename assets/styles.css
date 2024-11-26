@@ -1,85 +1,55 @@
-/* Global styles */
-* {
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #f6d365, #fda085);
+    color: #333;
+    text-align: center;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: 'Poppins', sans-serif;
-    background: linear-gradient(135deg, #6a11cb, #2575fc);
-    color: #fff;
-    text-align: center;
-    padding: 50px 20px;
-    transition: all 0.3s ease;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .container {
-    max-width: 600px;
-    margin: 0 auto;
-    background-color: rgba(255, 255, 255, 0.1);
-    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
-.heading {
-    font-size: 3em;
+h1 {
+    font-size: 36px;
     margin-bottom: 10px;
-    color: #fff;
 }
 
-.subheading {
-    font-size: 1.2em;
-    margin-bottom: 30px;
-    color: #e0e0e0;
+p {
+    font-size: 18px;
+    margin-bottom: 20px;
 }
 
-.links {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+.social-icons {
+    list-style: none;
+    padding: 0;
 }
 
-.social-link {
+.social-icons li {
+    margin-bottom: 10px;
+}
+
+.social-icons a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
     display: flex;
     align-items: center;
-    justify-content: center;
-    padding: 12px;
-    background-color: #333;
-    color: #fff;
-    font-size: 1.2em;
-    border-radius: 5px;
-    text-decoration: none;
-    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-.social-link:hover {
-    background-color: #444;
-    transform: scale(1.05);
-}
-
-.social-icon {
-    width: 40px;  /* Set to 40px */
-    height: 40px; /* Set to 40px */
+.social-icons a i {
     margin-right: 10px;
-    transition: transform 0.2s ease;
+    font-size: 24px;
 }
 
-.social-link:hover .social-icon {
-    transform: scale(1.2);
-}
-
-@media (max-width: 600px) {
-    .heading {
-        font-size: 2.5em;
-    }
-
-    .subheading {
-        font-size: 1em;
-    }
-
-    .social-link {
-        font-size: 1em;
-    }
+.social-icons a:hover {
+    color: #f6d365;
 }
