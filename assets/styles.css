@@ -60,8 +60,8 @@ body {
 }
 
 .social-icon {
-    width: 30px;
-    height: 30px;
+    width: 40px;  /* Set to 40px */
+    height: 40px; /* Set to 40px */
     margin-right: 10px;
     transition: transform 0.2s ease;
 }
