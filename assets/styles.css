@@ -10,34 +10,34 @@ body {
     background: linear-gradient(135deg, #6a11cb, #2575fc);
     color: #fff;
     text-align: center;
-    padding: 50px 20px;
-    height: 100vh;  /* Ensure full height */
-    overflow: hidden; /* Prevent any overflow at the bottom */
-    display: flex; /* Flexbox to center content vertically */
+    height: 100vh;  /* Full viewport height */
+    display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center; /* Centers content horizontally */
+    padding: 0 20px;  /* Removed top and bottom padding to prevent excessive whitespace */
+    overflow: hidden; /* Prevent overflow */
     transition: all 0.3s ease;
 }
 
 .container {
-    max-width: 600px;
-    margin: 0 auto;
-    background-color: rgba(255, 255, 255, 0.1);
+    width: 100%; /* Allow the container to take full width */
+    max-width: 800px;  /* Limiting the max-width for larger screens */
     padding: 30px;
+    background-color: rgba(255, 255, 255, 0.1);
     border-radius: 10px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
 }
 
-.heading {
+h1.heading {
     font-size: 3em;
-    margin-bottom: 10px;
-    color: #fff;
+    margin-bottom: 20px;
 }
 
-.subheading {
-    font-size: 1.2em;
+p.subheading {
+    font-size: 1.25em;
     margin-bottom: 30px;
-    color: #e0e0e0;
 }
 
 .links {
@@ -46,45 +46,63 @@ body {
     gap: 20px;
 }
 
-.social-link {
+a.social-link {
+    font-size: 1.1em;
+    text-decoration: none;
+    color: #fff;
     display: flex;
     align-items: center;
-    justify-content: center;
-    padding: 12px;
-    background-color: #333;
-    color: #fff;
-    font-size: 1.2em;
+    gap: 10px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.2);
     border-radius: 5px;
-    text-decoration: none;
-    transition: background-color 0.3s ease, transform 0.2s ease;
+    transition: background-color 0.3s ease;
 }
 
-.social-link:hover {
-    background-color: #444;
-    transform: scale(1.05);
+a.social-link:hover {
+    background-color: rgba(255, 255, 255, 0.4);
 }
 
-.social-icon {
-    width: 40px;
-    height: 40px;
-    margin-right: 10px;
-    transition: transform 0.2s ease;
+img.social-icon {
+    width: 30px;
+    height: 30px;
 }
 
-.social-link:hover .social-icon {
-    transform: scale(1.2);
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .heading {
+        font-size: 2.5em;
+    }
+
+    .subheading {
+        font-size: 1.15em;
+    }
+
+    a.social-link {
+        font-size: 1em;
+    }
+
+    img.social-icon {
+        width: 25px;
+        height: 25px;
+    }
 }
 
 @media (max-width: 600px) {
     .heading {
-        font-size: 2.5em;
+        font-size: 2em;
     }
 
     .subheading {
         font-size: 1em;
     }
 
-    .social-link {
-        font-size: 1em;
+    a.social-link {
+        font-size: 0.9em;
+    }
+
+    img.social-icon {
+        width: 20px;
+        height: 20px;
     }
 }
